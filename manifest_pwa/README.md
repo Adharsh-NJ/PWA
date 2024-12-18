@@ -1,16 +1,17 @@
-properties we can add to manifest
-1.name- this will be fetched by browser in multiple places eg: splash screen
-2.short_name: name under app icon
-3.start_url: which page to load in startup on click home screen icon
-4.scope: which pages are included in PWA experience
-5.display:"standalone" - standalone make the app look like native app
-6.background_color: bg color while loading
-7.theme_color: eg. on top bar in task switcher
-8.description: description of the app
-9.dir: read direction of app
-10.lang: main language of app
-11:orientation:"portrait-primary" restrict the orientation for the user
-12.icons: array of app icons [{src,type,sizes}]
-13: related_application: if you have alternative native application
+The `manifest.json` file is used to define properties for Progressive Web Applications (PWAs). Here's an overview of its key properties:
 
-check the manifest.json in public folder
+- **`name`**: Full name of the application.
+- **`short_name`**: Name displayed under the app icon.
+- **`start_url`**: The entry point of the app.
+- **`scope`**: Defines the scope of PWA experience.
+- **`display`**: Configures how the app is displayed (e.g., `standalone` for native-like).
+- **`background_color`**: Background color during loading.
+- **`theme_color`**: Color of the UI elements like the status bar.
+- **`description`**: Brief description of the app.
+- **`dir`**: Text direction (e.g., `ltr` or `rtl`).
+- **`lang`**: Primary language of the app.
+- **`orientation`**: Restricts orientation (e.g., `portrait-primary`).
+- **`icons`**: Array of icons used for the app.
+- **`related_applications`**: References to alternative native applications.
+
+Check the `manifest.json` file in the `public/` folder for full details.
